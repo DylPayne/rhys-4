@@ -52,7 +52,7 @@ const HeroBanner = () => {
           }}
         >
           <Image
-            src="/ocean1.jpg"
+            src="/snow2.jpg"
             alt="ocean"
             layout="fill"
             objectFit="cover"
