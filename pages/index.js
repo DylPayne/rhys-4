@@ -41,6 +41,7 @@ const HeroBanner = () => {
           content="Your one-stop-shop for all your photography, web design and graphic design needs."
           key="desc"
         />
+        <meta name="theme-color" content="#000000" />
       </Head>
       <ThemeProvider theme={theme}>
         <div
