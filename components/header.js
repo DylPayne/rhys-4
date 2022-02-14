@@ -59,35 +59,37 @@ var styles = {
 const MainHeader = () => {
   return (
     <header>
-      <Menu isOpen={false} styles={styles} right>
-        <div
-          style={{
-            width: "100%",
-            // border: "1px solid red",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "space-evenly",
-            height: 200,
-            // border: "1px solid red",
-            fontWeight: 200,
-            color: "white",
-          }}
-        >
-          <Link href="/" passHref>
-            <a className="underline">Home</a>
-          </Link>
-          <Link href="/about" passHref>
-            <a className="underline">About</a>
-          </Link>
-          <Link href="/services" passHref>
-            <a className="underline">Services</a>
-          </Link>
-          <Link href="/contact" passHref>
-            <a className="underline">Contact</a>
-          </Link>
-        </div>
-      </Menu>
+      <MediaQuery maxWidth={1000}>
+        <Menu isOpen={false} styles={styles} right>
+          <div
+            style={{
+              width: "100%",
+              // border: "1px solid red",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "space-evenly",
+              height: 200,
+              // border: "1px solid red",
+              fontWeight: 200,
+              color: "white",
+            }}
+          >
+            <Link href="/" passHref>
+              <a className="underline">Home</a>
+            </Link>
+            <Link href="/about" passHref>
+              <a className="underline">About</a>
+            </Link>
+            <Link href="/services" passHref>
+              <a className="underline">Services</a>
+            </Link>
+            <Link href="/contact" passHref>
+              <a className="underline">Contact</a>
+            </Link>
+          </div>
+        </Menu>
+      </MediaQuery>
       <AnimatedCursor
         innerSize={16}
         outerSize={60}
