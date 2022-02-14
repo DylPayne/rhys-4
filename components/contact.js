@@ -59,7 +59,7 @@ const Contact = () => {
           textAlign: "center",
         }}
       >
-        Sit tight. We'll get back to you as soon as we possibly can.
+        Sit tight. We&aposll get back to you as soon as we possibly can.
       </p>
       <form
         onSubmit={sendEmail}
